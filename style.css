@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+body{
+    background:#eee;
+    margin: 0;
+    padding: 0;
+}
+.flight-container{
+    width: 20rem;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10vh;
+    position: relative;
+}
+.flight{
+    display: block;
+    width: 60%;
+    height: 16.688rem;
+    border-radius: 1rem;
+    margin: auto;
+    -webkit-box-shadow: 0 6px 25px -4px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0 6px 25px -4px rgba(0,0,0,0.30);
+    box-shadow: 0 6px 25px -4px rgba(0,0,0,0.30);
+    padding-top: 8.5rem;
+    box-sizing: border-box;
+    background: rgb(15,134,201);
+    background: -moz-linear-gradient(45deg, rgba(15,134,201,1) 4%, rgba(156,219,255,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(15,134,201,1) 4%, rgba(156,219,255,1) 100%);
+    background: linear-gradient(45deg, rgba(15,134,201,1) 4%, rgba(156,219,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f86c9",endColorstr="#9cdbff",GradientType=1);
+}
+.flight:hover .airplane{
+    transform: translate(1.5rem, -1rem);
+}
+.flight:hover .cloud{
+    transform: translate(-0.5rem, 0) scale(1.1);
+    opacity: 0.9;
+}
+.airplane{
+    width: 9rem;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+.cloud{
+    width: 13rem;
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.path{
+    text-align: center;
+}
+.path span{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+}
+.price{
+    display: block;
+    width: 5.5rem;
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem;
+    border-radius:0.5rem;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #07319b;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5rem auto 0 auto;
+}
+.book-button{
+    width: 8.563rem;
+    height: 2.188rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: rgb(0,56,255);
+    background: -moz-linear-gradient(180deg, rgba(0,56,255,1) 0%, rgba(26,49,195,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,56,255,1) 0%, rgba(26,49,195,1) 100%);
+    background: linear-gradient(180deg, rgba(0,56,255,1) 0%, rgba(26,49,195,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0038ff",endColorstr="#1a31c3",GradientType=1);
+    -webkit-box-shadow: 0 2px 14px -3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 2px 14px -3px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 14px -3px rgba(0,0,0,0.4);   
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    position: absolute;
+    right: 2.8rem;
+    bottom: 1rem;
+}
+.book-button:hover{
+    -webkit-box-shadow: 0 2px 18px -3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 2px 18px -3px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 18px -3px rgba(0,0,0,0.4);   
+}
+.book-button:active{
+    -webkit-box-shadow: 0 2px 8px -3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 2px 8px -3px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 8px -3px rgba(0,0,0,0.4); 
+}
